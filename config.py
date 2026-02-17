@@ -1,0 +1,7 @@
+EYE_AR_THRESH = 0.25
+EYE_AR_TIME = 2.5   # seconds
+
+MOUTH_AR_THRESH = 0.75
+HEAD_DOWN_TIME = 2.0
+
+ALERT_SOUND = "alert.wav"
