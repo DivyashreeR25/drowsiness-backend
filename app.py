@@ -11,7 +11,8 @@ from detection.head_pose import head_down
 from detection.drowsiness import DrowsinessDetector
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
+
 
 # ---------------- GLOBAL STATE ----------------
 running = False
