@@ -62,9 +62,6 @@ def status():
 
 @app.route("/analyze", methods=["POST"])
 def analyze():
-    if not running:
-        return jsonify({"error": "detection not started"}), 400
-
     data = request.get_json(silent=True)
     if not data or "image" not in data:
         return jsonify({"error": "image not provided"}), 400
